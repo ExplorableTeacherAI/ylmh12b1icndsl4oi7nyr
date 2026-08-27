@@ -73,6 +73,51 @@ export interface VariableDefinition {
  *    { defaultValue: { x: 5, y: 10 }, type: 'object', schema: '{ x: number, y: number }' }
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
+    zipUnlockFee: {
+        defaultValue: 1,
+        type: 'number',
+        label: 'Zip unlock fee',
+        description: 'One-off fee in pounds to unlock a Zip scooter',
+        unit: '£',
+        min: 0,
+        max: 6,
+        step: 0.5,
+        color: '#6366f1',
+    },
+    zipPerMinute: {
+        defaultValue: 0.3,
+        type: 'number',
+        label: 'Zip cost per minute',
+        description: 'Cost in pounds for each minute ridden on Zip',
+        unit: '£',
+        min: 0,
+        max: 0.6,
+        step: 0.05,
+        color: '#6366f1',
+    },
+    glideUnlockFee: {
+        defaultValue: 3,
+        type: 'number',
+        label: 'Glide unlock fee',
+        description: 'One-off fee in pounds to unlock a Glide scooter',
+        unit: '£',
+        min: 0,
+        max: 6,
+        step: 0.5,
+        color: '#f97316',
+    },
+    glidePerMinute: {
+        defaultValue: 0.1,
+        type: 'number',
+        label: 'Glide cost per minute',
+        description: 'Cost in pounds for each minute ridden on Glide',
+        unit: '£',
+        min: 0,
+        max: 0.6,
+        step: 0.05,
+        color: '#f97316',
+    },
+
     // ========================================
     // ADD YOUR VARIABLES HERE
     // ========================================
