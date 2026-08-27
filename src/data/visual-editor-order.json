@@ -1,4 +1,449 @@
 {
-  "version": 2,
-  "blockIds": []
+  "version": 3,
+  "blockIds": [
+    "choosing-deals-title",
+    "choosing-deals-hook",
+    "choosing-deals-promise",
+    "deal-line-heading",
+    "deal-line-worked-example",
+    "deal-line-visual",
+    "deal-line-pattern",
+    "deal-line-practice-heading",
+    "deal-line-practice-cost",
+    "deal-line-practice-minutes",
+    "two-deals-heading",
+    "two-deals-setup",
+    "two-deals-switch",
+    "two-deals-visual",
+    "two-deals-gap-closes",
+    "two-deals-practice-heading",
+    "two-deals-practice-short-ride",
+    "two-deals-practice-long-ride",
+    "crossing-point-heading",
+    "crossing-point-reading",
+    "crossing-point-visual",
+    "crossing-point-sentence",
+    "crossing-point-practice-heading",
+    "crossing-point-practice-meaning",
+    "which-deal-heading",
+    "which-deal-setup",
+    "which-deal-visual",
+    "which-deal-decision",
+    "which-deal-practice-heading",
+    "which-deal-practice-six-minutes",
+    "which-deal-practice-stretch",
+    "wrapping-up-heading",
+    "wrapping-up-summary",
+    "wrapping-up-next"
+  ],
+  "rows": [
+    {
+      "id": "layout-choosing-deals-title",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-deals-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-deals-hook",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-deals-hook"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-deals-promise",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-deals-promise"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-worked-example",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-worked-example"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-pattern",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-pattern"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-practice-cost",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-practice-cost"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-deal-line-practice-minutes",
+      "type": "stack",
+      "columns": [
+        [
+          "deal-line-practice-minutes"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-setup",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-setup"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-switch",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-switch"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-gap-closes",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-gap-closes"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-practice-short-ride",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-practice-short-ride"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-deals-practice-long-ride",
+      "type": "stack",
+      "columns": [
+        [
+          "two-deals-practice-long-ride"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-crossing-point-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "crossing-point-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-crossing-point-reading",
+      "type": "stack",
+      "columns": [
+        [
+          "crossing-point-reading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-crossing-point-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "crossing-point-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-crossing-point-sentence",
+      "type": "stack",
+      "columns": [
+        [
+          "crossing-point-sentence"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-crossing-point-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "crossing-point-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-crossing-point-practice-meaning",
+      "type": "stack",
+      "columns": [
+        [
+          "crossing-point-practice-meaning"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-setup",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-setup"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-decision",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-decision"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-practice-six-minutes",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-practice-six-minutes"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-which-deal-practice-stretch",
+      "type": "stack",
+      "columns": [
+        [
+          "which-deal-practice-stretch"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-wrapping-up-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "wrapping-up-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-wrapping-up-summary",
+      "type": "stack",
+      "columns": [
+        [
+          "wrapping-up-summary"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-wrapping-up-next",
+      "type": "stack",
+      "columns": [
+        [
+          "wrapping-up-next"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    }
+  ]
 }

@@ -85,24 +85,4 @@ export const whatTheCrossingPointMeansBlocks: ReactElement[] = [
             />
         </Block>
     </StackLayout>,
-
-    <StackLayout key="layout-crossing-point-practice-shared-cost" maxWidth="xl">
-        <Block id="crossing-point-practice-shared-cost" padding="sm">
-            <NumericQuestion
-                blockId="crossing-point-practice-shared-cost"
-                questionId="crossing-point-practice-shared-cost"
-                prompt="Two new scooter apps, Bolt and Dash, are level at 15 minutes, where a ride costs 5.50 pounds. What does a 15 minute ride on Dash cost, in pounds?"
-                answer={5.5}
-                tolerance={0.01}
-                prefix="£"
-                placeholder="e.g. 6.00"
-                correctMessage="Correct — 5.50 pounds. Being level means the meeting point sits on both lines at once, so that one cost belongs to Bolt and to Dash equally."
-                hints={[
-                    "Have another look. If the two apps are level at 15 minutes, what can you say about their two costs there?",
-                    "Try this: in the graph above, check the meeting point and read off what each app charges at that moment. Do the two readings differ?",
-                    "A meeting point lies on both lines, so both apps charge the same there — the cost given for that moment is Dash's cost too.",
-                ]}
-            />
-        </Block>
-    </StackLayout>,
 ];
