@@ -1,8 +1,10 @@
 import { type ReactElement } from "react";
 import { Block } from "@/components/templates";
 import { StackLayout } from "@/components/layouts";
-import { EditableH2, EditableParagraph } from "@/components/atoms";
-import { VisualOptionCards } from "@/components/organisms";
+import { EditableH2, EditableH3, EditableParagraph } from "@/components/atoms";
+import { CrossingPointSentence } from "./visuals/CrossingPointSentence";
+import { ChoiceQuestion } from "./practice/ChoiceQuestion";
+import { NumericQuestion } from "./practice/NumericQuestion";
 
 export const whatTheCrossingPointMeansBlocks: ReactElement[] = [
     <StackLayout key="layout-crossing-point-heading" maxWidth="xl">
@@ -17,44 +19,15 @@ export const whatTheCrossingPointMeansBlocks: ReactElement[] = [
         <Block id="crossing-point-reading" padding="sm">
             <EditableParagraph id="para-crossing-point-reading" blockId="crossing-point-reading">
                 Where the two deals meet, one point belongs to both of them at the same time.
-                Its x-value is a number of minutes and its y-value is an amount of money. Read
-                both, and you can say what that point means in the scooter story.
+                Follow the dashed line down to the minutes axis and across to the pounds axis,
+                then use those two numbers to finish the sentence.
             </EditableParagraph>
         </Block>
     </StackLayout>,
 
-    <StackLayout key="layout-crossing-point-visual" maxWidth="xl">
-        <Block id="crossing-point-visual" padding="sm">
-            <VisualOptionCards
-                blockId="crossing-point-visual"
-                intro="Pick how your students will work out what the meeting point is telling them."
-                cards={[
-                    {
-                        id: "sentence-builder",
-                        title: "The meeting point with a fill-in-the-blank sentence about minutes and money",
-                        looks: "The two deal lines with their meeting point marked, and a sentence underneath with two gaps waiting to be filled.",
-                        manipulate: "Students drag the x-value and the y-value from the point into the sentence and check it",
-                        reveals: "The point means both apps cost exactly the same at that one ride length, said in plain words",
-                        targetsMisconception: "Students cannot say what the crossing point actually means in the story",
-                        recommended: true,
-                    },
-                    {
-                        id: "receipt-check",
-                        title: "Two scooter receipts that match only at the meeting point",
-                        looks: "A receipt for each app showing its unlock fee and minute charge, beside the two lines on the axes.",
-                        manipulate: "Students slide the ride length and watch the two totals move apart, match, then swap over",
-                        reveals: "The meeting point is the one ride length where the two receipts read the same total",
-                        targetsMisconception: "Students cannot say what the crossing point actually means in the story",
-                    },
-                    {
-                        id: "before-after-shading",
-                        title: "The grid shaded to show which app is cheaper on each side of the meeting point",
-                        looks: "The two lines with the region before the meeting point shaded in one app's colour and the region after it in the other's.",
-                        manipulate: "Students tap a ride length on either side and name the cheaper app",
-                        reveals: "The meeting point is the moment the cheaper app changes, not simply where the answer is",
-                    },
-                ]}
-            />
+    <StackLayout key="layout-crossing-point-visual" maxWidth="2xl">
+        <Block id="crossing-point-visual" padding="sm" hasVisualization>
+            <CrossingPointSentence />
         </Block>
     </StackLayout>,
 
@@ -62,10 +35,74 @@ export const whatTheCrossingPointMeansBlocks: ReactElement[] = [
         <Block id="crossing-point-sentence" padding="sm">
             <EditableParagraph id="para-crossing-point-sentence" blockId="crossing-point-sentence">
                 A crossing point is never just a dot on a graph. It says that for one exact ride
-                length, the two apps charge the same amount, and either side of it a different
-                app is cheaper. If you cannot say that as a sentence about minutes and money,
-                you have not finished reading it.
+                length the two apps charge the same amount, and either side of it a different
+                app is cheaper.
             </EditableParagraph>
+        </Block>
+    </StackLayout>,
+
+    <StackLayout key="layout-crossing-point-practice-heading" maxWidth="xl">
+        <Block id="crossing-point-practice-heading" padding="sm">
+            <EditableH3 id="h3-crossing-point-practice-heading" blockId="crossing-point-practice-heading">
+                Your turn
+            </EditableH3>
+        </Block>
+    </StackLayout>,
+
+    <StackLayout key="layout-crossing-point-practice-meaning" maxWidth="xl">
+        <Block id="crossing-point-practice-meaning" padding="sm">
+            <ChoiceQuestion
+                blockId="crossing-point-practice-meaning"
+                questionId="crossing-point-practice-meaning"
+                prompt="A different problem, same idea: two bowling deals are graphed with games along x and cost up y, and the lines cross at the point (3, 11). What does that point tell you?"
+                options={[
+                    {
+                        id: "same-cost-three-games",
+                        label: "For 3 games, both deals cost 11 pounds.",
+                        correct: true,
+                        feedback:
+                            "Yes. The point sits on both lines, so it is the one number of games where the two deals charge exactly the same, and 11 pounds is that shared cost.",
+                    },
+                    {
+                        id: "first-deal-cheaper",
+                        label: "The first deal is the cheaper one.",
+                        feedback:
+                            "That is the belief to watch out for: a crossing point does not crown a winner, it is where the two deals are level. Go back to the graph above and read the point as a pair of numbers — minutes, then money — and say it as a sentence.",
+                    },
+                    {
+                        id: "always-eleven",
+                        label: "The bowling always costs 11 pounds.",
+                        feedback:
+                            "Not quite — 11 pounds is only the cost at that one point. Try the sentence builder above again: the money in the sentence is tied to a particular number of minutes, not to every ride.",
+                    },
+                    {
+                        id: "swapped-coordinates",
+                        label: "Both deals cost the same when the price is 3 pounds.",
+                        feedback:
+                            "The two numbers have swapped roles. In the graph above, check which axis the first number of the point is read from and which axis the second comes from.",
+                    },
+                ]}
+            />
+        </Block>
+    </StackLayout>,
+
+    <StackLayout key="layout-crossing-point-practice-shared-cost" maxWidth="xl">
+        <Block id="crossing-point-practice-shared-cost" padding="sm">
+            <NumericQuestion
+                blockId="crossing-point-practice-shared-cost"
+                questionId="crossing-point-practice-shared-cost"
+                prompt="Two new scooter apps, Bolt and Dash, are level at 15 minutes, where a ride costs 5.50 pounds. What does a 15 minute ride on Dash cost, in pounds?"
+                answer={5.5}
+                tolerance={0.01}
+                prefix="£"
+                placeholder="e.g. 6.00"
+                correctMessage="Correct — 5.50 pounds. Being level means the meeting point sits on both lines at once, so that one cost belongs to Bolt and to Dash equally."
+                hints={[
+                    "Have another look. If the two apps are level at 15 minutes, what can you say about their two costs there?",
+                    "Try this: in the graph above, check the meeting point and read off what each app charges at that moment. Do the two readings differ?",
+                    "A meeting point lies on both lines, so both apps charge the same there — the cost given for that moment is Dash's cost too.",
+                ]}
+            />
         </Block>
     </StackLayout>,
 ];
