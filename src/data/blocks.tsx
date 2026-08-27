@@ -73,6 +73,18 @@ initializeVariableColors(variableDefinitions);
  * check your .env file and set VITE_SHOW_EXAMPLES=false.
  */
 
+import { choosingBetweenTwoDealsBlocks } from "./sections/ChoosingBetweenTwoDeals";
+import { turningADealIntoALineBlocks } from "./sections/TurningADealIntoALine";
+import { twoDealsOneGridBlocks } from "./sections/TwoDealsOneGrid";
+import { whatTheCrossingPointMeansBlocks } from "./sections/WhatTheCrossingPointMeans";
+import { whichDealWinsWhenBlocks } from "./sections/WhichDealWinsWhen";
+import { wrappingUpBlocks } from "./sections/WrappingUp";
+
 export const blocks: ReactElement[] = [
-    // Start adding your blocks here!
+    ...choosingBetweenTwoDealsBlocks,
+    ...turningADealIntoALineBlocks,
+    ...twoDealsOneGridBlocks,
+    ...whatTheCrossingPointMeansBlocks,
+    ...whichDealWinsWhenBlocks,
+    ...wrappingUpBlocks,
 ];
