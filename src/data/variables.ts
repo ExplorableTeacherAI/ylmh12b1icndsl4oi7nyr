@@ -73,6 +73,18 @@ export interface VariableDefinition {
  *    { defaultValue: { x: 5, y: 10 }, type: 'object', schema: '{ x: number, y: number }' }
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
+    zipReadMinutes: {
+        defaultValue: 4,
+        type: 'number',
+        label: 'Marker position',
+        description: 'Ride length in minutes that the marker on the single Zip line is reading',
+        unit: 'min',
+        min: 0,
+        max: 12,
+        step: 1,
+        color: '#6366f1',
+    },
+
     rideMinutes: {
         defaultValue: 4,
         type: 'number',

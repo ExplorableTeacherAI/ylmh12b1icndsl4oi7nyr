@@ -4,7 +4,6 @@ import { StackLayout } from "@/components/layouts";
 import { EditableH2, EditableH3, EditableParagraph } from "@/components/atoms";
 import { CrossingPointSentence } from "./visuals/CrossingPointSentence";
 import { ChoiceQuestion } from "./practice/ChoiceQuestion";
-import { NumericQuestion } from "./practice/NumericQuestion";
 
 export const whatTheCrossingPointMeansBlocks: ReactElement[] = [
     <StackLayout key="layout-crossing-point-heading" maxWidth="xl">
